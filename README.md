@@ -33,7 +33,7 @@ Here, $A^{\textnormal{res}}$ is the residual Helmholtz free energy, $\rho$ is th
 
 $$ \alpha_{\textnormal{vdw}} = \mathcal{C}^{\textnormal{Mie}} \left( \frac{1}{\lambda_a - 3} - \frac{1}{\lambda_r - 3}\right)  $$
 
-The FE-ANN(s) EoS has been trained using first- and second-order derivative properties of the Mie particle. The following thermophysical properties are considered: compressibility factor, $Z$, second-virial coefficient, ${B^*}$, and internal energy, ${U^*}$, isochoric heat capacity, ${C_V^*}$, thermal pressure coefficient, ${\gamma_V^*}$, isothermal compressibility, as ${\rho^* \kappa_T^*}$, thermal expansion coefficient, $\alpha_P^*$, adiabatic index, ${\gamma=C_P^*/C_V^*}$, and the Joule-Thomson coefficient, ${\mu_{JT}^*}$.
+The FE-ANN(s) EoS has been trained using first- and second-order derivative properties of the Mie particle. The following thermophysical properties are considered: compressibility factor, $Z$, second-virial coefficient, ${B}$, and internal energy, ${U}$, isochoric heat capacity, ${C_V}$, thermal pressure coefficient, ${\gamma_V}$, isothermal compressibility, as ${\rho\kappa_T}$, thermal expansion coefficient, $\alpha_P$, adiabatic index, ${\gamma=C_P/C_V}$, and the Joule-Thomson coefficient, ${\mu_{JT}}$.
 
 ------
 ### License information
