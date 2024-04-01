@@ -2,9 +2,8 @@
 
 This repository is part of the Supporting Information of the article *On the continuous modeling of fluid and solid states* by Gustavo Chaparro and Erich A. Müller. In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
 
-$$ \mathcal{U}^{\textnormal{Mie}} = \mathcal{C}^{\textnormal{Mie}} \epsilon \left[ \left(\frac{\sigma}{r}\right)^{\lambda_r} -  \left(\frac{\sigma}{r}\right)^{\lambda_a} \right] $$
-$$ \mathcal{C}^{\textnormal{Mie}} = \frac{\lambda_r}{\lambda_r- \lambda_a} \left( \frac{\lambda_r}{\lambda_a}\right)^{\frac{\lambda_a}{\lambda_r - \lambda_a}} 
-$$ 
+
+$$ \mathcal{U}^{\textnormal{Mie}} = \epsilon  \underbrace{\left[ \frac{\lambda_r}{\lambda_r- \lambda_a} \left( \frac{\lambda_r}{\lambda_a}\right)^{\frac{\lambda_a}{\lambda_r - \lambda_a}} \right] }_{\mathcal{C}^{\textnormal{Mie}}} \left[ \left(\frac{\sigma}{r}\right)^{\lambda_r} -  \left(\frac{\sigma}{r}\right)^{\lambda_a} \right] $$
 
 Here, $\mathcal{U}^{\textnormal{Mie}}$ refers to the interaction energy between two Mie particles, $\epsilon$ is the energy scale, $\sigma$ is the shape parameter, which is related to the particle's diameter and $r$ is the center-to-center distance. Finally, $\lambda_r$ and $\lambda_a$ are the repulsive and attractive exponents.
 
