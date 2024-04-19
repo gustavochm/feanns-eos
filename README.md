@@ -1,6 +1,6 @@
 # Supporting Information: *"On the continuous modeling of fluid and solid states"*
 
-This repository is part of the Supporting Information of the article *On the continuous modeling of fluid and solid states* by Gustavo Chaparro and Erich A. Müller. In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
+This repository is part of the Supporting Information of the article *On the continuous modeling of fluid and solid states* by Gustavo Chaparro and Erich A. Müller. Preprint available [here](https://doi.org/10.26434/chemrxiv-2024-tjfj7). In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
 
 
 $$ \mathcal{U}^{\textnormal{Mie}} = \epsilon  \underbrace{\left[ \frac{\lambda_r}{\lambda_r- \lambda_a} \left( \frac{\lambda_r}{\lambda_a}\right)^{\frac{\lambda_a}{\lambda_r - \lambda_a}} \right] }_{\mathcal{C}^{\textnormal{Mie}}} \left[ \left(\frac{\sigma}{r}\right)^{\lambda_r} -  \left(\frac{\sigma}{r}\right)^{\lambda_a} \right] $$
@@ -13,6 +13,7 @@ This repository includes the following information:
 - [Python package to use the FE-ANN(s) EoS](./feanns_eos)
 - [Parameters of the trained FE-ANN(s) EoS](./eos_params)
 - Examples of how to use the FE-ANN(s) EoS. See Jupyter notebooks (1., 2., 3., and 4.)
+
 
 ------
 ### Prerequisites
