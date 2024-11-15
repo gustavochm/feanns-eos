@@ -3,9 +3,9 @@
 This repository is part of the Supplementary Information of the article *"Development of a Helmholtz free energy equation of state for fluid and solid phases via artificial neural networks"* by Gustavo Chaparro and Erich A. Müller. In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
 
 
-$$ \mathcal{U}^{\textnormal{Mie}} = \epsilon  \underbrace{\left[ \frac{\lambda_\mathrm{r}}{\lambda_\mathrm{r}- \lambda_\mathrm{a}} \left( \frac{\lambda_\mathrm{r}}{\lambda_\mathrm{a}}\right)^{\frac{\lambda_\mathrm{a}}{\lambda_\mathrm{r} - \lambda_\mathrm{a}}} \right] }_{\mathcal{C}^{\textnormal{Mie}}} \left[ \left(\frac{\sigma}{r}\right)^{\lambda_\mathrm{r}} -  \left(\frac{\sigma}{r}\right)^{\lambda_\mathrm{a}} \right] $$
+$$ \mathcal{U}^{\textnormal{Mie}} = \epsilon  \underbrace{\left[ \frac{\lambda_r}{\lambda_r- \lambda_a} \left( \frac{\lambda_r}{\lambda_a}\right)^{\frac{\lambda_a}{\lambda_r - \lambda_a}} \right] }_{\mathcal{C}^{\textnormal{Mie}}} \left[ \left(\frac{\sigma}{r}\right)^{\lambda_r} -  \left(\frac{\sigma}{r}\right)^{\lambda_a} \right] $$
 
-Here, $\mathcal{U}^{\textnormal{Mie}}$ refers to the interaction energy between two Mie particles, $\epsilon$ is the energy scale, $\sigma$ is the shape parameter, which is related to the particle's diameter and $r$ is the center-to-center distance. Finally, $\lambda_\mathrm{r}$ and $\lambda_\mathrm{a}$ are the repulsive and attractive exponents.
+Here, $\mathcal{U}^{\textnormal{Mie}}$ refers to the interaction energy between two Mie particles, $\epsilon$ is the energy scale, $\sigma$ is the shape parameter, which is related to the particle's diameter and $r$ is the center-to-center distance. Finally, $\lambda_r$ and $\lambda_a$ are the repulsive and attractive exponents.
 
 
 This repository includes the following information:
@@ -31,7 +31,7 @@ $$ A^{\textnormal{res}} = \textnormal{ANN}(\chi, \rho, 1/T) - \textnormal{ANN}(\
 
 Here, $A^{\textnormal{res}}$ is the residual Helmholtz free energy, $\rho$ is the density, $T$ is the absolute temperature, and $\textnormal{ANN}$ refers to an artificial neural network. Finally, $\chi$ are the descriptors of the molecule (or pseudo-molecule) of interest, e.g., the molecular parameters of an interaction potential. In this work, the use of the FE-ANN(s) EoS is showcased for the Mie particle; in this case, the $\alpha_{vdw}$ is used as the molecular descriptor.
 
-$$ \alpha_{\textnormal{vdw}} = \mathcal{C}^{\textnormal{Mie}} \left( \frac{1}{\lambda_\mathrm{a} - 3} - \frac{1}{\lambda_\mathrm{r} - 3}\right)  $$
+$$ \alpha_{\textnormal{vdw}} = \mathcal{C}^{\textnormal{Mie}} \left( \frac{1}{\lambda_a - 3} - \frac{1}{\lambda_r - 3}\right)  $$
 
 The FE-ANN(s) EoS has been trained using first- and second-order derivative properties of the Mie particle. The following thermophysical properties are considered: compressibility factor, $Z$, second-virial coefficient, ${B}$, internal energy, ${U}$, isochoric heat capacity, ${C_V}$, thermal pressure coefficient, ${\gamma_V}$, isothermal compressibility, as ${\rho\kappa_T}$, thermal expansion coefficient, $\alpha_P$, adiabatic index, ${\gamma=C_P/C_V}$, and the Joule-Thomson coefficient, ${\mu_\mathrm{JT}}$.
 
