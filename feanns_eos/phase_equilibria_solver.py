@@ -333,7 +333,7 @@ def vle_solver(alpha, Tad, fun_dic, Pad0=None, critical=None, rho0: Sequence=[No
 
     if not success:
         rho0 = jnp.array([density_vap, density_liq]).flatten()
-        sol_vle = root(of_vle, rho0, args=(alpha, Tad, pressure_and_chempot_fun))
+        sol_vle = root(of_two_phase, rho0, args=(alpha, Tad, pressure_and_chempot_fun))
         density_vap, density_liq = sol_vle.x
         Pad = float(pressure_fun(alpha, density_vap, Tad))
         success = sol_vle.success
