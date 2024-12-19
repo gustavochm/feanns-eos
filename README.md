@@ -1,6 +1,6 @@
 # Supplementary Information: *"Development of a Helmholtz free energy equation of state for fluid and solid phases via artificial neural networks"*
 
-This repository is part of the Supplementary Information of the article *"Development of a Helmholtz free energy equation of state for fluid and solid phases via artificial neural networks"* by Gustavo Chaparro and Erich A. Müller. In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
+This repository is part of the Supplementary Information of the article *"[Development of a Helmholtz free energy equation of state for fluid and solid phases via artificial neural networks](https://doi.org/10.1038/s42005-024-01892-3)"* by Gustavo Chaparro and Erich A. Müller. In this article, an equation of state based on artificial neural networks (FE-ANN(s) EoS) that continuously models fluid and solid states is presented. This EoS is showcased for the Mie particle.
 
 
 $$ \mathcal{U}^{\textnormal{Mie}} = \epsilon  \underbrace{\left[ \frac{\lambda_r}{\lambda_r- \lambda_a} \left( \frac{\lambda_r}{\lambda_a}\right)^{\frac{\lambda_a}{\lambda_r - \lambda_a}} \right] }_{\mathcal{C}^{\textnormal{Mie}}} \left[ \left(\frac{\sigma}{r}\right)^{\lambda_r} -  \left(\frac{\sigma}{r}\right)^{\lambda_a} \right] $$
@@ -36,8 +36,28 @@ $$ \alpha_{\textnormal{vdw}} = \mathcal{C}^{\textnormal{Mie}} \left( \frac{1}{\l
 The FE-ANN(s) EoS has been trained using first- and second-order derivative properties of the Mie particle. The following thermophysical properties are considered: compressibility factor, $Z$, second-virial coefficient, ${B}$, internal energy, ${U}$, isochoric heat capacity, ${C_V}$, thermal pressure coefficient, ${\gamma_V}$, isothermal compressibility, as ${\rho\kappa_T}$, thermal expansion coefficient, $\alpha_P$, adiabatic index, ${\gamma=C_P/C_V}$, and the Joule-Thomson coefficient, ${\mu_\mathrm{JT}}$.
 
 ------
+### Citation
+
+If you use this package please cite the main article.
+
+```bibtex
+@article{Chaparro2024,
+  title={Development of a Helmholtz free energy equation of state for fluid and solid phases via artificial neural networks},
+  author={Gustavo Chaparro and Erich A. Müller},
+  journal={Communications Physics},
+  year={2024},
+  volume={7},
+  pages={406},
+  doi={10.1038/s42005-024-01892-3}
+}
+```
+
+------
 ### License information
 
 See ``LICENSE.md`` for information on the terms & conditions for usage of this software and a DISCLAIMER OF ALL WARRANTIES.
 
 Although not required by the license, if it is convenient for you, please cite this if used in your work. Please also consider contributing any changes you make back, and benefit the community.
+
+
+
